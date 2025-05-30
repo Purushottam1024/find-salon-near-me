@@ -1,9 +1,9 @@
-# 💇‍♀️ Find Saloon Near Me
+# 💇‍♀️ Find Salon Near Me
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Built with Selenium](https://img.shields.io/badge/built%20with-Selenium-green)](https://www.selenium.dev/)
-[![Open Issues](https://img.shields.io/github/issues/Purushottam1024/find-saloon-near-me)](https://github.com/Purushottam1024/find-saloon-near-me/issues)
+[![Open Issues](https://img.shields.io/github/issues/Purushottam1024/find-salon-near-me)](https://github.com/Purushottam1024/find-salon-near-me/issues)
 
 A Python automation tool that uses Selenium to search for salons in any city using Google Search and exports the results into an Excel file.
 
@@ -41,8 +41,8 @@ Here’s what the generated Excel sheet looks like:
 ### Option 1: Manual Setup
 
 ```bash
-git clone https://github.com/Purushottam1024/find-saloon-near-me.git
-cd find-saloon-near-me
+git clone https://github.com/Purushottam1024/find-salon-near-me.git
+cd find-salon-near-me
 python3 -m venv salonenv
 source salonenv/bin/activate  # Windows: salonenv\Scripts\activate
 pip install .
@@ -59,7 +59,7 @@ python3 install.py
 After running `install.py`, activate the environment using the alias printed in the terminal (e.g. `salonenv`) and then run the tool:
 
 ```bash
-find-salon --query "salons near Mumbai" --scrolls 5 --output mumbai_salons.xlsx
+find-salon --query "salons near me" --scrolls 5 --output mumbai_salons.xlsx
 ```
 
 ---
@@ -96,7 +96,7 @@ save_to_excel(results, "mumbai_salons.xlsx")
 ## 🧫 Project Structure
 
 ```text
-find-saloon-near-me/
+find-salon-near-me/
 ├── find_salon/
 │   ├── main.py                  # CLI entry point
 │   └── scraper/
