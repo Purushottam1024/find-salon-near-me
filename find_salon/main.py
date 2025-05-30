@@ -4,6 +4,7 @@ from .scraper.driver import get_driver
 from .scraper.excel import save_to_excel
 from .scraper.extractor import extract_salon_data
 from .scraper.search import search_salons
+from .scraper.utils import extract_salon_name_from_url
 
 
 def main():
@@ -33,7 +34,8 @@ def main():
 
         all_data = []
         for idx, url in enumerate(urls, start=1):
-            print(f"[{idx}/{len(urls)}] Scraping: {url}")
+            salon_name = extract_salon_name_from_url(url)
+            print(f"[{idx}/{len(urls)}] Scraping: {salon_name}")
             data = extract_salon_data(driver, url)
             all_data.append(data)
 
